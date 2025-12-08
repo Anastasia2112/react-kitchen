@@ -1,0 +1,26 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "target": "ES2020",
+    "types": ["vite-plugin-svgr/client"],
+    "baseUrl": "src",
+    "paths": {
+      "@app/*": ["app/*"],
+      "@entities/*": ["entities/*"],
+      "@features/*": ["features/*"],
+      "@pages/*": ["pages/*"],
+      "@shared/*": ["shared/*"],
+      "@widgets/*": ["widgets/*"]
+    },
+    /* Bundler mode */
+    "jsx": "react-jsx",
+    /* Linting */
+    "strict": true
+  },
+  "include": ["src"],
+  "exclude": ["./node_modules", "./.git", "./dist"]
+}
