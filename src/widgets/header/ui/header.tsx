@@ -17,7 +17,7 @@ export const Header = () => {
       <NavLink
         to={item.link}
         className={({ isActive }) =>
-          clsx("header__nav-list-item", isActive && "header__nav-active-link")
+          clsx("header__nav-list-link", isActive && "header__nav-active-link")
         }
       >
         {item.title}
