@@ -1,6 +1,7 @@
-import {useState} from "react";
+import { useState } from "react";
 import { CONTENT_NAVIGATION_MENU } from "@shared/consts";
-import {clsx} from "clsx";
+import { clsx } from "clsx";
+import { NavLink } from "react-router-dom";
 import Logo from "@shared/assets/logo.svg?react";
 import MenuBurder from "@shared/assets/menu-burger.svg?react";
 import MenuClose from "@shared/assets/menu-close.svg?react";
@@ -12,12 +13,15 @@ export const Header = () => {
   const navigationContent = CONTENT_NAVIGATION_MENU.map(item =>
     <li
       key={item.title}
-      className={clsx(
-        'header__nav-list-item',
-
-      )}
     >
-      {item.title}
+      <NavLink
+        to={item.link}
+        className={({ isActive }) =>
+          clsx("header__nav-list-item", isActive && "header__nav-active-link")
+        }
+      >
+        {item.title}
+      </NavLink>
     </li>
   )
   return (

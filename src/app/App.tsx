@@ -1,17 +1,9 @@
 import './App.css';
-import { Header } from "@widgets/header";
+import { AppRouter } from "./routers";
 
 function App() {
   return (
-    <>
-      <Header />
-      <div>
-        {Array(30)
-          .fill('')
-          .map(item => <p>pupupu</p>)
-        }
-      </div>
-    </>
+    <AppRouter />
   )
 }
 
