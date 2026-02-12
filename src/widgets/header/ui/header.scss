@@ -7,7 +7,7 @@
   padding-inline: 12px;
   flex-wrap: wrap;
   border: 1px solid grey;
-  color: #39373A;
+  color: var(--dark-gray);
   font-weight: 500;
 
   &__header-open {
@@ -59,8 +59,8 @@
   }
 
   &__nav-active-link {
-    color: #FFCC29;
-    border-bottom: 2px solid #FFCC29;
+    color: var(--brand-color);
+    border-bottom: 2px solid var(--brand-color);
   }
 
   &__cta {
@@ -68,7 +68,7 @@
     color: inherit;
     padding: 12px 27px;
     border-radius: 40px;
-    background-color: #FFCC29;
+    background-color: var(--brand-color);
   }
 }
 
