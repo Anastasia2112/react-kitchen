@@ -1,6 +1,5 @@
 import { AppRouter } from "./routers";
-import './styles/root.scss';
-import './styles/reset.scss';
+import './styles/index.scss';
 
 function App() {
   return (
