@@ -1,10 +1,15 @@
+import { HeroSection } from "./heroSection/heroSection";
+
 export const HomePage = () => {
   return (
     <>
-      {Array(30)
-        .fill('')
-        .map(item => <p>pururu</p>)
-      }
+      <HeroSection />
+      <section>
+        {Array(30)
+          .fill('')
+          .map((item, i) => <p key={i}>pururu</p>)
+        }
+      </section>
     </>
   )
 }
