@@ -1,5 +1,5 @@
 import "./heroSection.scss";
-import MarkerIcon from './assets/marker-icon.svg?react';
+import MarkerIcon from "./assets/icons/marker-icon.svg?react";
 
 export const HeroSection = () => {
   const highlight = (text) => <span className="hero__list__highlight">{text}</span>;
@@ -18,6 +18,7 @@ export const HeroSection = () => {
         <ul className="hero__list">
           {listItems.map(item =>
             <li><MarkerIcon />{item}</li>
+            // <li>{item}</li>
           )}
         </ul>
         <button className="hero__button">
