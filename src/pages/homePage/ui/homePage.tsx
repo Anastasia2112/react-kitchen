@@ -7,7 +7,7 @@ export const HomePage = () => {
       <section>
         {Array(30)
           .fill('')
-          .map(item => <p>pururu</p>)
+          .map((item, i) => <p key={i}>pururu</p>)
         }
       </section>
     </>

@@ -16,9 +16,8 @@ export const HeroSection = () => {
         <h1 className="hero__heading">Кухни на заказ</h1>
         <h4 className="hero__subheading">Стильная кухня от производителя по цене на 20% ниже рынка</h4>
         <ul className="hero__list">
-          {listItems.map(item =>
-            <li><MarkerIcon />{item}</li>
-            // <li>{item}</li>
+          {listItems.map((item, i) =>
+            <li key={i}><MarkerIcon className="hero__list__marker" />{item}</li>
           )}
         </ul>
         <button className="hero__button">
