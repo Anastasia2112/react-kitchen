@@ -5,7 +5,7 @@ export const HomePage = () => {
   return (
     <>
       <HeroSection />
-      <ServicesSection heading={"Все еще не можете определиться с выбором кухни?"} />
+      <ServicesSection />
 
       <section>
         {Array(30)

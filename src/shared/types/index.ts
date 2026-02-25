@@ -1,1 +1,1 @@
-export { type IContantNavType } from './contentNavTypes'
+export { type IContentNavType } from './contentNavTypes'

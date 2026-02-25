@@ -1,4 +1,4 @@
-export interface IContantNavType {
+export interface IContentNavType {
     title: string
     link: string
 }

@@ -2,7 +2,7 @@ import { TitledSection } from "@pages/homePage/ui/titledSection/titledSection";
 import { highlightSubstrings } from "@shared/lib/highlight";
 import "./servicesSection.scss";
 
-export const ServicesSection = ({ heading }) => {
+export const ServicesSection = () => {
   const listData = [
     { text: 'Получите консультацию и эскиз мебели', highlight: ['эскиз мебели'], imgUrl: './assets/images/card-1' },
     { text: 'Подберем материалы сочетая цену и качество', highlight: ['сочетая цену и качество'], imgUrl: './assets/images/card-1' },
@@ -17,23 +17,23 @@ export const ServicesSection = ({ heading }) => {
 
   return (
     <>
-      <TitledSection heading={heading} className="services__section">
-        {/*<div className="services__content">*/}
-          <ul className="services__cards-list">
-            {listData.map((item, i) => (
-              <li
-                key={i}
-                className="services__card"
-                style={{backgroundImage: `url(${getImgUrl(i)})`}}
-              >
-              <span className="services__card__text">
-                {highlightSubstrings(item.text, item.highlight, 'services__card__highlight')}
-              </span>
-              </li>
-            ))}
-          </ul>
-        {/*</div>*/}
-
+      <TitledSection
+        heading={"Все еще не можете определиться с выбором кухни?"}
+        className="services__section"
+      >
+        <ul className="services__cards-list">
+          {listData.map((item, i) => (
+            <li
+              key={i}
+              className="services__card"
+              style={{backgroundImage: `url(${getImgUrl(i)})`}}
+            >
+            <span className="services__card__text">
+              {highlightSubstrings(item.text, item.highlight, 'services__card__highlight')}
+            </span>
+            </li>
+          ))}
+        </ul>
       </TitledSection>
     </>
   )

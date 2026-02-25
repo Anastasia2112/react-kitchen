@@ -1,6 +1,6 @@
-import { IContantNavType } from '../types'
+import { IContentNavType } from '../types'
 
-export const CONTENT_NAVIGATION_MENU: IContantNavType[] = [
+export const CONTENT_NAVIGATION_MENU: IContentNavType[] = [
     { title: 'Главная', link: '/' },
     { title: 'О нас', link: '/about' },
     { title: 'Каталог', link: '/catalog' },
