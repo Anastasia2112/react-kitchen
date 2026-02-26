@@ -1,1 +1,2 @@
-export { type IContentNavType } from './contentNavTypes'
+export { type ContentNav } from './contentNavTypes';
+export { type HighlightableText } from "./highlightableText";

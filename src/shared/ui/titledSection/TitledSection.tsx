@@ -8,7 +8,7 @@ interface TitledSectionProps extends React.HTMLAttributes<HTMLElement> {
 
 export const TitledSection = ({ heading, children, className = '', ...rest }: TitledSectionProps) => {
   return (
-    <section className={clsx('titled__section', className ?? '')} {...rest}>
+    <section className={clsx(['titled__section', className])} {...rest}>
       <h2 className="titled__heading">
         <span>{heading}</span>
         <div className="titled__heading__line"></div>

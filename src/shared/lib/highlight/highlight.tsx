@@ -1,15 +1,15 @@
 import React from 'react';
+import { HighlightableText } from "@shared/types";
 
 /**
  * Выделяет заданные подстроки в тексте, оборачивая их в span с указанным CSS-классом.
  * @param text - исходный текст
  * @param substrings - массив подстрок для выделения
  * @param className - CSS-класс для выделения
- * @returns React-узел с выделенными частями
+ * @returns React-узел с выделенными подстроками
  */
 export const highlightSubstrings = (
-  text: string,
-  substrings: string[],
+  {text, substrings}: HighlightableText,
   className: string
 ): React.ReactNode => {
   if (!substrings.length) return text;

@@ -1,5 +1,5 @@
-import { HeroSection } from "@pages/homePage/ui/sections";
-import { ServicesSection } from "@pages/homePage/ui/sections";
+import { HeroSection } from "@widgets/heroSection";
+import { ServicesSection } from "@widgets/servicesSection";
 
 export const HomePage = () => {
   return (
