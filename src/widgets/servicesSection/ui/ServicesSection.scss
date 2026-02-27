@@ -1,0 +1,66 @@
+@use "@app/styles/breakpoints";
+
+.services {
+  &__section {
+    margin-top: 24px;
+  }
+
+  &__cards-list {
+    width: 100%;
+    margin-top: 21px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 296px);
+    gap: 35px 20px;
+    justify-content: center;
+  }
+
+  &__card {
+    height: 360px;
+    padding: 0 0 35px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: 100% auto;
+    background-position: center;
+
+    &__text {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--white);
+    }
+
+    &__highlight {
+      color: var(--brand-color);
+    }
+  }
+}
+
+@media (min-width: breakpoints.$lg) {
+  .services {
+    &__section {
+      margin-top: 59px;
+    }
+
+    &__cards-list {
+      margin-top: 50px;
+      grid-template-columns: repeat(auto-fit, 265px);
+      gap: 38px;
+    }
+
+    &__card {
+      height: 370px;
+      padding: 0 0 38px 19px;
+      background-size: auto 100%;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &__text {
+        font-size: 22px;
+      }
+    }
+  }
+}
